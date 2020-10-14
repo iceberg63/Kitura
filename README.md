@@ -44,7 +44,7 @@ Kitura is a web framework and web server that is created for web services writte
 - Codable routing
 - URL parameters
 - Static file serving
-- [FastCGI support](https://github.com/IBM-Swift/Kitura/blob/master/Documentation/FastCGI.md)
+- [FastCGI support](https://github.com/Kitura-Next/Kitura/blob/master/Documentation/FastCGI.md)
 - SSL/TLS support
 - Pluggable middleware
 
@@ -58,13 +58,13 @@ All improvements to Kitura are very welcome! Here's how to get started with deve
 
 1. Clone this repository.
 
-  `$ git clone https://github.com/IBM-Swift/Kitura`
+  `$ git clone https://github.com/Kitura-Next/Kitura`
 
 2. Build and run tests.
 
   `$ swift test`
 
-You can find more info on contributing to Kitura in our [contributing guidelines](https://github.com/IBM-Swift/Kitura/blob/master/.github/CONTRIBUTING.md).
+You can find more info on contributing to Kitura in our [contributing guidelines](https://github.com/Kitura-Next/Kitura/blob/master/.github/CONTRIBUTING.md).
 
 ## Community
 
