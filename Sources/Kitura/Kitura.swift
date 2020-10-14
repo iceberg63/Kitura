@@ -312,7 +312,7 @@ public class Kitura {
 // MARK: ServerOptions
 
 /**
- Bridge [ServerOptions](http://ibm-swift.github.io/Kitura-net/Structs/ServerOptions.html) from [KituraNet](http://ibm-swift.github.io/Kitura-net) so that you only need to import `Kitura` to access it.
+ Bridge [ServerOptions](https://kitura-next.github.io/Kitura-net/Structs/ServerOptions.html) from [KituraNet](https://kitura-next.github.io/Kitura-net) so that you only need to import `Kitura` to access it.
 
  ServerOptions allows customization of default connection policies, including:
 

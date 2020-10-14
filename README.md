@@ -1,22 +1,22 @@
 <p align="center">
-<a href="http://kitura.io/">
-<img src="https://raw.githubusercontent.com/IBM-Swift/Kitura/master/Documentation/KituraLogo-wide.png" height="100" alt="Kitura">
+<a href="https://kituranext.org/">
+<img src="https://raw.githubusercontent.com/Kitura-Next/Kitura/master/Documentation/KituraLogo-wide.png" height="100" alt="Kitura">
 </a>
 <p align="center"><strong>A Swift Web Framework and HTTP Server</strong></p>
 </p>
 
 <p align="center">
-<a href="https://www.kitura.io/packages.html#all">
+<a href="https://kituranext.org/packages.html#all">
 <img src="https://img.shields.io/badge/docs-kitura.io-1FBCE4.svg" alt="Docs">
 </a>
-<a href="https://travis-ci.org/IBM-Swift/Kitura">
-<img src="https://travis-ci.org/IBM-Swift/Kitura.svg?branch=master" alt="Build Status - Master">
+<a href="https://travis-ci.org/Kitura-Next/Kitura">
+<img src="https://travis-ci.org/Kitura-Next/Kitura.svg?branch=master" alt="Build Status - Master">
 </a>
 <img src="https://img.shields.io/badge/os-macOS-green.svg?style=flat" alt="macOS">
 <img src="https://img.shields.io/badge/os-linux-green.svg?style=flat" alt="Linux">
 <img src="https://img.shields.io/badge/license-Apache2-blue.svg?style=flat" alt="Apache 2">
-<a href="https://codecov.io/gh/IBM-Swift/Kitura">
-<img src="https://codecov.io/gh/IBM-Swift/Kitura/branch/master/graph/badge.svg" alt="codecov">
+<a href="https://codecov.io/gh/Kitura-Next/Kitura">
+<img src="https://codecov.io/gh/Kitura-Next/Kitura/branch/master/graph/badge.svg" alt="codecov">
 </a>
 <a href="https://codebeat.co/projects/github-com-ibm-swift-kitura">
 <img src="https://codebeat.co/badges/d2d1cb10-e587-44b7-b63a-0a76ffb7bd96" alt="codebeat badge">
@@ -29,7 +29,7 @@
 
 ## Summary
 
-Kitura is a web framework and web server that is created for web services written in Swift. For more information, visit [www.kitura.io](http://www.kitura.io).
+Kitura is a web framework and web server that is created for web services written in Swift. For more information, visit [www.kituranext.org](https://www.kituranext.org).
 
 ## Table of Contents
 * [Summary](#summary)
@@ -50,7 +50,7 @@ Kitura is a web framework and web server that is created for web services writte
 
 ## Getting Started
 
-Visit [www.kitura.io](http://www.kitura.io/) for a Getting Started guide, tutorials, and API reference documentation.
+Visit [www.kituranext.org](https://www.kituranext.org/) for a Getting Started guide, tutorials, and API reference documentation.
 
 ## Contributing to Kitura
 
