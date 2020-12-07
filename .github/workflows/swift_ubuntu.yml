@@ -13,8 +13,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Swift Version
       run: swift --version
-    - name: Install libssl
-      run: apt-get update && apt-get install -y libssl-dev
+    - name: Install depends
+      run: apt-get update && apt-get install -y clang libicu-dev libcurl4-openssl-dev libssl-dev libpython2.7
     - name: Build
       run: swift build
     - name: Test
@@ -27,8 +27,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Swift Version
       run: swift --version
-    - name: Install libssl
-      run: apt-get update && apt-get install -y libssl-dev
+    - name: Install depends
+      run: apt-get update && apt-get install -y clang libicu-dev libcurl4-openssl-dev libssl-dev libpython2.7
     - name: Build
       run: swift build
     - name: Test
@@ -40,6 +40,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Swift Version
       run: swift --version
+    - name: Install depends
+      run: apt-get update && apt-get install -y clang libicu-dev libcurl4-openssl-dev libssl-dev libpython2.7
     - name: Build
       run: swift build
     - name: Test
