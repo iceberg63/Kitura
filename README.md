@@ -7,8 +7,7 @@
 
 <p align="center">
 <a href="https://kituranext.org/learn">
-<img src="https://img.shields.io/badge/docs-kitura-1FBCE4.svg" alt="Docs">
-</a>
+<img src="https://img.shields.io/badge/docs-kitura-1FBCE4.svg" alt="Docs"></a>
 <img src="https://img.shields.io/badge/license-Apache2-blue.svg?style=flat" alt="Apache 2">
 <a href="http://swift-at-ibm-slack.mybluemix.net/">
 <img src="http://swift-at-ibm-slack.mybluemix.net/badge.svg" alt="Slack Status">
