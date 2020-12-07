@@ -14,7 +14,7 @@ jobs:
     - name: Swift Version
       run: swift --version
     - name: Install depends
-      run: apt-get update && apt-get install -y clang libicu-dev libcurl4-openssl-dev libssl-dev
+      run: apt-get update && apt-get install -y libcurl4-openssl-dev libssl-dev
     - name: Build
       run: swift build
     - name: Test
