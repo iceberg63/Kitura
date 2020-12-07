@@ -28,7 +28,7 @@ jobs:
     - name: Swift Version
       run: swift --version
     - name: Install depends
-      run: apt-get update && apt-get install -y clang libicu-dev libcurl4-openssl-dev libssl-dev libpython2.7
+      run: apt-get update && apt-get install -y libcurl4-openssl-dev libssl-dev
     - name: Build
       run: swift build
     - name: Test
@@ -41,7 +41,7 @@ jobs:
     - name: Swift Version
       run: swift --version
     - name: Install depends
-      run: sudo apt-get update && sudo apt-get install -y clang libicu-dev libcurl4-openssl-dev libssl-dev libpython2.7
+      run: sudo apt-get update && sudo apt-get install -y libcurl4-openssl-dev libssl-dev
     - name: Build
       run: swift build
     - name: Test
