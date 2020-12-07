@@ -8,7 +8,7 @@ on:
 jobs:
   ubuntu-swift-51:
     runs-on: ubuntu-18.04
-    container: swift:5.1
+    container: swift:5.1.5-bionic
     steps:
     - uses: actions/checkout@v2
     - name: Swift Version
