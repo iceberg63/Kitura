@@ -1,0 +1,46 @@
+name: Swift Ubuntu X86_64
+
+on:
+  push:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  ubuntu-swift-51:
+    runs-on: ubuntu-18.04
+    container: swift:5.1
+    steps:
+    - uses: actions/checkout@v2
+    - name: Swift Version
+      run: swift --version
+    - name: Install libssl
+      run: apt-get update && apt-get install -y libssl-dev
+    - name: Build
+      run: swift build
+    - name: Test
+      run: swift test --enable-test-discovery
+
+  ubuntu-swift-52:
+    runs-on: ubuntu-18.04
+    container: swift:5.2.3-bionic
+    steps:
+    - uses: actions/checkout@v2
+    - name: Swift Version
+      run: swift --version
+    - name: Install libssl
+      run: apt-get update && apt-get install -y libssl-dev
+    - name: Build
+      run: swift build
+    - name: Test
+      run: swift test --enable-test-discovery
+
+  ubuntu-latest:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Swift Version
+      run: swift --version
+    - name: Build
+      run: swift build
+    - name: Test
+      run: swift test --enable-test-discovery
