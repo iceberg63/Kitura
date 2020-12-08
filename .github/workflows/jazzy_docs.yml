@@ -6,7 +6,7 @@ env:
 
 on:
   push:
-    branches: [ master ] # To update docs without a release - add 'ci generate docs' to the merge commit message.
+    branches: [ master ] # To update docs - add 'ci generate docs' to the merge commit message.
   
 jobs:
   generate-docs:
