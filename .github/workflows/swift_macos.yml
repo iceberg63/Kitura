@@ -10,7 +10,6 @@ jobs:
     runs-on: macos-latest
     strategy:
       matrix:
-        swift_version: [5.1.5-bionic, 5.2.3-bionic, 5.3.1-bionic]
         xcode_version: [Xcode_11.3.1.app, Xcode_11.4.app, Xcode_12.app]
     steps:
     - uses: actions/checkout@v2
