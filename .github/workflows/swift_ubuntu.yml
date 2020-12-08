@@ -9,6 +9,7 @@ jobs:
   ubuntu-swift:
     runs-on: ubuntu-18.04
     strategy:
+      fail-fast: false
       matrix:
         swift_version: [5.1.5-bionic, 5.2.3-bionic, 5.3.1-bionic]
       
