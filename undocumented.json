@@ -1,40 +1,19 @@
 {
   "warnings": [
     {
-      "file": "/Users/runner/work/Kitura-net/Kitura-net/Sources/KituraNet/HTTP/KeepAliveState.swift",
-      "line": 17,
-      "symbol": "KeepAliveState",
-      "symbol_kind": "source.lang.swift.decl.enum",
+      "file": "/Users/runner/work/Kitura/Kitura/Sources/Kitura/SwaggerGenerator.swift",
+      "line": 351,
+      "symbol": "SwaggerDocument",
+      "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/runner/work/Kitura-net/Kitura-net/Sources/KituraNet/HTTP/KeepAliveState.swift",
-      "line": 19,
-      "symbol": "KeepAliveState.disabled",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/Kitura-net/Kitura-net/Sources/KituraNet/HTTP/KeepAliveState.swift",
-      "line": 20,
-      "symbol": "KeepAliveState.unlimited",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/Kitura-net/Kitura-net/Sources/KituraNet/HTTP/KeepAliveState.swift",
-      "line": 21,
-      "symbol": "KeepAliveState.limited(maxRequests:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/work/Kitura-net/Kitura-net/Sources/KituraNet/IncomingSocketProcessorCreator.swift",
-      "line": 25,
-      "symbol": "IncomingSocketProcessorCreator.name",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "file": "/Users/runner/work/Kitura/Kitura/Sources/Kitura/SwaggerGenerator.swift",
+      "line": 376,
+      "symbol": "SwaggerDocument.init(title:description:version:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/runner/work/Kitura-net/Kitura-net"
+  "source_directory": "/Users/runner/work/Kitura/Kitura"
 }
