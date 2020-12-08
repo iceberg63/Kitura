@@ -6,47 +6,21 @@ on:
     branches: [ master ]
 
 jobs:
-  macOS-swift-51:
+  macOS-swift:
     runs-on: macos-latest
+    strategy:
+      matrix:
+        swift_version: [5.1.5-bionic, 5.2.3-bionic, 5.3.1-bionic]
+        xcode_version: [Xcode_11.3.1.app, Xcode_11.4.app, Xcode_12.app]
     steps:
     - uses: actions/checkout@v2
     - name: Xcode Version
       run: |
-        sudo xcode-select -s /Applications/Xcode_11.3.1.app
+        sudo xcode-select -s /Applications/${{ matrix.xcode_version }}
         xcodebuild -version
     - name: Swift Version
       run: swift --version
     - name: Build
       run: swift build
-    - name: Test
-      run: swift test --enable-test-discovery
-
-  macOS-swift-52:
-    runs-on: macos-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Swift Version 5.2.2
-      run: |
-        sudo xcode-select -s /Applications/Xcode_11.4.app
-        xcodebuild -version
-    - name: Swift Version
-      run: swift --version
-    - name: Build
-      run: export KITURA_NIO=1 && swift build
-    - name: Test
-      run: swift test --enable-test-discovery
-
-  macOS-swift-53:
-    runs-on: macos-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Swift Version 5.3
-      run: |
-        sudo xcode-select -s /Applications/Xcode_12.app
-        xcodebuild -version
-    - name: Swift Version
-      run: swift --version
-    - name: Build
-      run: export KITURA_NIO=1 && swift build
     - name: Test
       run: swift test --enable-test-discovery
