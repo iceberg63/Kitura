@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-18.04
     strategy:
       matrix:
-        swift_version: [swift:5.1.5-bionic, swift:5.2.3-bionic, swift:5.3.1-bionic]
+        swift_version: [5.1.5-bionic, 5.2.3-bionic, 5.3.1-bionic]
       
-    container: ${{ matrix.swift_version }}
+    container: swift:${{ matrix.swift_version }}
     steps:
     - uses: actions/checkout@v2
     - name: Swift Version
