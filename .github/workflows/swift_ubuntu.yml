@@ -6,37 +6,10 @@ on:
     branches: [ master ]
 
 jobs:
-  ubuntu-swift-51:
-    runs-on: ubuntu-18.04
-    container: swift:5.1.5-bionic
-    steps:
-    - uses: actions/checkout@v2
-    - name: Swift Version
-      run: swift --version
-    - name: Install depends
-      run: apt-get update && apt-get install -y libcurl4-openssl-dev libssl-dev
-    - name: Build
-      run: swift build
-    - name: Test
-      run: swift test --enable-test-discovery
-
-  ubuntu-swift-52:
-    runs-on: ubuntu-18.04
-    container: swift:5.2.3-bionic
-    steps:
-    - uses: actions/checkout@v2
-    - name: Swift Version
-      run: swift --version
-    - name: Install depends
-      run: apt-get update && apt-get install -y libcurl4-openssl-dev libssl-dev
-    - name: Build
-      run: swift build
-    - name: Test
-      run: swift test --enable-test-discovery
   
   ubuntu-swift-52-NIO:
     runs-on: ubuntu-18.04
-    container: swift:5.2.3-bionic
+    container: swift:5.3.1-bionic
     steps:
     - uses: actions/checkout@v2
     - name: Swift Version
@@ -45,18 +18,5 @@ jobs:
       run: apt-get update && apt-get install -y libcurl4-openssl-dev libssl-dev
     - name: Build
       run: export KITURA_NIO=1 && swift build
-    - name: Test
-      run: swift test --enable-test-discovery
-
-  ubuntu-latest:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Swift Version
-      run: swift --version
-    - name: Install depends
-      run: sudo apt-get update && sudo apt-get install -y libcurl4-openssl-dev libssl-dev
-    - name: Build
-      run: swift build
     - name: Test
       run: swift test --enable-test-discovery
