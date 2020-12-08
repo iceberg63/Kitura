@@ -30,7 +30,7 @@ jobs:
     - name: Install depends
       run: apt-get update && apt-get install -y libcurl4-openssl-dev libssl-dev
     - name: Build
-      run: swift build
+      run: export KITURA_NIO=1 && swift build
     - name: Test
       run: swift test --enable-test-discovery
 
@@ -43,6 +43,6 @@ jobs:
     - name: Install depends
       run: sudo apt-get update && sudo apt-get install -y libcurl4-openssl-dev libssl-dev
     - name: Build
-      run: swift build
+      run: export KITURA_NIO=1 && swift build
     - name: Test
       run: swift test --enable-test-discovery
