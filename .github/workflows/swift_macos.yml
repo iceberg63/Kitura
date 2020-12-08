@@ -32,7 +32,7 @@ jobs:
     - name: Swift Version
       run: swift --version
     - name: Build
-      run: swift build
+      run: export KITURA_NIO=1 && swift build
     - name: Test
       run: swift test --enable-test-discovery
 
@@ -47,6 +47,6 @@ jobs:
     - name: Swift Version
       run: swift --version
     - name: Build
-      run: swift build
+      run: export KITURA_NIO=1 && swift build
     - name: Test
       run: swift test --enable-test-discovery
