@@ -45,4 +45,4 @@ jobs:
     - name: Build
       run: export KITURA_NIO=1 && swift build
     - name: Test
-      run: swift test --enable-test-discovery
+      run: export KITURA_NIO=1 && swift test --enable-test-discovery
